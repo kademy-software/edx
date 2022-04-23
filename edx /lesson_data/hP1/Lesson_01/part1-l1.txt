@@ -1,0 +1,1556 @@
+<h2>01. Giới Thiệu Về HTML</h2>
+
+<p>HTML là viết tắt của Hypertext markup language (ngôn ngữ đánh dấu siêu văn bản).<p>
+
+<p>Lưu ý : HTML không phải là ngôn ngữ lập trình, thay vào đó nó sử dụng tag (thẻ) để chú thích hoặc đánh dấu tài liệu. Các phần nội dung được đánh dấu bằng các thẻ khác nhau, sẽ có thể hiện khác nhau khi người dùng nhìn thấy nó hiển thị trên trình duyệt.</p>
+
+<p>Ví dụ: khi bạn muốn hiển thị tiêu đề của tài liệu, với kích thước to và in đậm, bạn sẽ dùng tag ///<h1>/// để đánh dấu như sau: ///<h1>Đây là tiêu đề của tài liệu</h1>///</p>
+
+<p>Tương tự như vậy, thẻ <h2> thể hiện cho tiêu đề con như là 1 mục trong tài liệu. Thẻ ///<p>/// thể hiện cho một đoạn trong tài liệu đó. Các tài liệu cũng có thể liên kết với nhau bằng siêu liên kết (hyperlink). Khi đó, chúng ta dùng thẻ ///<a>///. <p>
+//////////////////////////////////////////////////////////////////
+<h2>02. Lưu Và Chạy File HTML<h2>
+
+<p>Để lưu file html, chúng ta lưu chúng ở loại file có đuôi là .html. Ví dụ: index.html, about.html…. Khi máy tính nhìn thấy file .html, nó biết rằng nó sẽ mở trong một trình duyệt internet như Chrome, Firefox hoặc Safari.</p>
+
+<p>Trình duyệt của bạn có thể đọc file *.html và nó biết cách hiển thị trên màn hình. Hơn thế nữa, các tag của file HTML cũng cho phép bộ đọc màn hình và các thiết bị hỗ trợ khác sử dụng các tag để trình bày thông tin theo những cách mới và đặc biệt.</p>
+//////////////////////////////////////////////////////////////////
+<h2>03. Sự Phát Triển của HTML</h2>
+<p>HTML được tạo ra từ năm 1990 và có quá trình phát triển liên tục. Cùng với sự phát triển bùng nổ của internet, HTML cũng phát triển và hiện nay trở thành một phần không thể thiếu.
+
+Phiên bản hiện tại của HTML là HTML5 và được xuất bản bởi W3C.</p>
+////////////////////////////////////////////////////////////////////////
+Video : <a herf https://www.coursera.org/learn/html/lecture/Lhlau/01-02-the-evolution-of-html />
+
+////code source/// 
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lte IE 9]><html class="ie ie9 lte9" lang="vi"><![endif]-->
+<!--[if !IE]><!--><html lang="vi"><!--<![endif]-->
+<head dir="ltr">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam-cell.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"4239b2af83",applicationID:"5115270"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(10),c=t(11),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(12);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],7:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(9),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],8:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],9:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],10:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],11:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],12:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(10),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!P++){var t=M.info=NREUM.info,e=g.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(O,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+M.offset],null,"api"),c("timing",["load",n]);var r=g.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=v+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===g.readyState&&o()}function o(){c("mark",["domContent",a()+M.offset],null,"api")}var a=t(5),c=t("handle"),f=t(10),u=t("ee"),s=t(8),d=t(6),p=t(2),l=t(3),v=p.getConfiguration("ssl")===!1?"http":"https",m=window,g=m.document,y="addEventListener",h="attachEvent",w=m.XMLHttpRequest,b=w&&w.prototype,E=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:w,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,O={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1215.min.js"},T=w&&b&&b[y]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:T,userAgent:s,disabled:E};if(!E){t(1),t(7),g[y]?(g[y]("DOMContentLoaded",o,l(!1)),m[y]("load",r,l(!1))):(g[h]("onreadystatechange",i),m[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var P=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(11),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"4239b2af83","applicationID":"5115270","transactionName":"ZQQAZhdQW0sHAUJRDFxOJEcLUkFRCQwZVA5BTwZYBF9SVwcSRktNUQ4XQBZUQlkUBxhOClcWERwMX1FdHlh1VxZAEgdFBENQcQgGU0BNVQQW","queueTime":1,"applicationTime":1621,"agent":"","atts":"SUMXEF9KF0oDE0NdEEY+CEURblZXCQlfXUEIQwxdERxHXRcXU0sXVwVAHkdSWk0UEVNnClZDWBAGXkBKFQcbTlIICgNWAFxMFRUNUEwUUxMHGSZpBQhXSWIOTQBRUABHHRdXFAUUAkFZAAZXCEgYSwkEQk8CQARAHkdVUEgUB1VZF1cFPV4AVlRbHz1BWQVUDQdtBl1USxVADBoGVhk9RgpWUlQDERhMDFUGDlcWH1xWEgdEVgJeTxVTA1dZXUgOU18CURhMfgBWVFsfNVdeBV4EMUUMRVZQKANbXRBCAAFXPmNwbDtAGhoQVxBMUAleVlM5C1IaWRADDl0GWhhOV1hdWQdXDBsfFl5TTBEDRF1IcTlSAlQaYQ5IUAYKURkVG0IAcUZdFxdTVhdbAA4ZB11aWw0iUA1bVFEAB1AJAglUVgEJAlMHBgFUUFEMA1BVCVFRA1YQSRNGXRdMUlEQQg0DSzpfVFUDQAwaIW4UUgIAAVwYVlMWAkN5CT5HVQFQCQ9CWFE/R1AHUVJcFVs6FwYJAgNBAG4QAFBZVQwWTj9HUAdRVBF9bCsuFBRBQQQTHBVeRlESC1lWQQhQThAWVEQWDxFpTApfBD1eDFxcTAMGFAIFUw0RV0kTRl0XTFhNDm0UDFsRQhcCVU4USwZDTwxHCG5cTAMPRRpZA1BOEBZURBYEDllbCG0CDUcLRUYWFQdHTQZcFQtTCRMPCUpARV0SHAMOXQZaalsJF1hMEBwXB0ARWFZZCkAMC08QEgdDS1NZVwUJaVsMRw8WQUtZQVUKQAwOTxASB0NLU1lXBQlpWwxHDxZBS0FHVwQOU1VBCFBOEBZURBYFF0RKBlwVTFAJXlZTOQtSGlkQAw5dBloYTldYXVkHVwwbHxZeU0wRA0RdSHE5UgJUGmEOSFAGClEZFRtCAHFDXRQWX1sCXkoAXgpSXnhVUg9cU1FVUgRTVFcMUFtSWVcBV1tRAAMEDVEBAlxVV0NOEBZURBYFF0RKBlwVTFYMQkVUBxtpVgJfBEAIR3ZcZBNTU1wBW0EWWgxtQAkDAQFNQ1E9FwJUUAQYBD5DCQZTUgwSE21ACQMBBxgrZiwuEhNtQAhWBwYYAG4UUgIDBVtfRgFqTVJXBFcSHW1ACFYHBEFDVj0XAwBXBFYBQkJKAlwGQkUAUxcURBFTSU1RFBBAAF9BFggXW2cKRgQPQUcLABREEVNJTVEUEEAAX0EWBA5ZWwhtAg1HC0VGFhAHREwKUQAOEF8AGRoVB0cWAEcTEFcLRRtaCg1VUzxRDhdcEUIbUBIPWhpZBk1AQABAQF0VFmlZFkYJPUYcQVBnARdTSxAQW0BBAEJGUQkMG1cRHw4WWgBDFxREEFNJFlcSFm0QQlBKOQNRXQ1GQ1gQKF5PUQoOVxdWHFFCGihQVlEIFllLCwlBK1wRVFkYKwNVGCxhQToSVAFqCVM9ARFDcxESXgBmUFotC0IXVgFWTAFTER1zLjZ7dE8SDQtZABFyXQUJWRFDcQkQXQhUGglWUhgITQZZWwRLAAcPRjFXXgJACE0HVgYbC1BAGhoRVxAXVxZFak0VB0RnClZDWApSBgEBVk4USgZDFAdBEW5UTRIKU1YXWwIDRgBVak0VB0RnBV0UDFY6WFtnCwtSXA9XFgNAABMPGhYQWVsGQRI9QABAQF0VFhQUQUoDPUcWVEdnFRZXTAYcBgdGOlxUVh9MVVkPXhJACFcdF0AEPUNLBkA+EUYERVAWAQdCZw5TDxscB11aWw0RaUoGQxQHQRFUURpcUwAUQUoDPUcWVEdnFRZXTAYcBgdGOlxUVh9MVFQMUQoRbQpEQRpcVxoaG1A+F0EAQ2pLEgNCXU1VBBZtCFBbQUgBWU0RQQRMUAleVlMVPVlNFxBbUx5HSVdnExFTSjxBFQNGAB9SXRI9W1kNS08RWx9UFwJXVQ8UQUoDPUcWVEdnFRZXTAYcBgdGOlxUVh9MVVcWQBIHHBZYT11EWAcNTxAZAG0QQlBKORFCWRdXTwVXEW5YWQgbGFsLUxEWVxcfV1QJAV1LPF0UFhBfABkaHgBpTRBXEz1BEVBBXUgFU0w8XwAMS0tSXVkWFlNKTUEIGFdHCwQNSkBOWjxHEgdAOkJBWRIHGF8GRj4PUwtIG0sDE0NdDUYIA15LU1lXBQlFZwxHFUAIVx0XQAQ9Q0sGQD4RRgRFUBYBB0JnDlMPGxwWVERNAwxCUQJeTxFbH1QXAlVSGhobUD4XQQBDaksSA0JdTVUEFm0IUFtBSAZDSgJGCA1cRwsDFlNaAQhRClRSAVEAAgFQWxoaF1cMEm0EX1pWORdfXDxEU0xAAEBAXRUWU1xBCFBVHkdFUFUWPVdWDFw+F1sBbkMKSARTTABaBAZtAElcSxILWF9BCFNOEBFUWEg5A1hXDW0UC1Y6RwcWFAdCTRFcBAZtA0NaVTkBV1sLV0NYA1AdF0AEPUNLBkA+EUYERVAWAQdCZw5TDxscFUNaWgoHWxYBXg4BWRZuWk0SQAwJTxAZAG0QQlBKORFCWRdXTwVXEW5YWQgbGEgRXQMOVwgfRlEcBxQCUgNYH08="}</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  
+<title data-base-title="
+ Bài 01 : Khái niệm cơ bản về HTML | Chương trình học của CX001  | Kademy">
+  
+ Giới thiệu cơ bản về HTML và công cụ xây dựng trang web | Bài 01 : Khái niệm cơ bản về HTML | Chương trình học của CX001  | Kademy
+</title>
+
+
+      <script type="text/javascript">
+        /* immediately break out of an iframe if coming from the marketing website */
+        (function(window) {
+          if (window.location !== window.top.location) {
+            window.top.location = window.location;
+          }
+        })(this);
+      </script>
+
+  
+
+  <script type="text/javascript" src="https://d24jp206mxeyfm.cloudfront.net/static/js/i18n/vi/djangojs.735d00afbcad.js"></script>
+  <script type="text/javascript" src="https://d24jp206mxeyfm.cloudfront.net/static/js/ie11_find_array.bd1c6dc7a133.js"></script>
+  
+  <link rel="icon" type="image/x-icon" href="https://d1uwn6yupg8lfo.cloudfront.net/edxsites/aegir-images/favicon.ico"/>
+
+  
+  
+
+    <link href="https://d24jp206mxeyfm.cloudfront.net/static/css/lms-style-vendor.2aefab95d2eb.css" rel="stylesheet" type="text/css" />
+
+
+
+    
+  
+
+    <link href="https://d24jp206mxeyfm.cloudfront.net/static/bragi-ff8f00/css/lms-main-v1.12d7675e4965.css" rel="stylesheet" type="text/css" />
+
+
+
+
+    
+    
+<script type="text/javascript" src="https://d24jp206mxeyfm.cloudfront.net/static/js/lms-main_vendor.3c3c9a2604d6.js" charset="utf-8"></script>
+
+
+    
+    
+<script type="text/javascript" src="https://d24jp206mxeyfm.cloudfront.net/static/js/lms-application.0e3fae472a20.js" charset="utf-8"></script>
+
+
+
+  
+    
+    
+    <script type="text/javascript" src="https://d24jp206mxeyfm.cloudfront.net/static/bundles/commons.ff75c8e0b4a03342ba6a.698303a323e1.js" ></script>
+
+
+
+  <script>
+    window.baseUrl = "https://d24jp206mxeyfm.cloudfront.net/static/";
+    (function (require) {
+      require.config({
+          baseUrl: window.baseUrl
+      });
+    }).call(this, require || RequireJS.require);
+  </script>
+  <script type="text/javascript" src="https://d24jp206mxeyfm.cloudfront.net/static/lms/js/require-config.38226099c6ad.js"></script>
+  
+    <script type="text/javascript">
+        (function (require) {
+          require.config({
+              paths: {
+                'course_bookmarks/js/views/bookmark_button': 'course_bookmarks/js/views/bookmark_button.d4cfaf3361fa',
+'js/views/message_banner': 'js/views/message_banner.141974fd4f5d',
+'moment': 'common/js/vendor/moment-with-locales.43ec67e44612',
+'moment-timezone': 'common/js/vendor/moment-timezone-with-data.60142e6c4416',
+'js/courseware/course_info_events': 'js/courseware/course_info_events.2fc35b57627f',
+'js/courseware/accordion_events': 'js/courseware/accordion_events.6064c7809de5',
+'js/dateutil_factory': 'js/dateutil_factory.be68acdff619',
+'js/courseware/link_clicked_events': 'js/courseware/link_clicked_events',
+'js/courseware/toggle_element_visibility': 'js/courseware/toggle_element_visibility.474ff5ba9de3',
+'js/student_account/logistration_factory': 'js/student_account/logistration_factory.81b147e2752d',
+'js/courseware/courseware_factory': 'js/courseware/courseware_factory.1504fc10caef',
+'js/groups/views/cohorts_dashboard_factory': 'js/groups/views/cohorts_dashboard_factory.ca68388d81d6',
+'js/groups/discussions_management/discussions_dashboard_factory': 'js/discussions_management/views/discussions_dashboard_factory.2e10d9097343',
+'draggabilly': 'js/vendor/draggabilly.26caba6f7187',
+'hls': 'common/js/vendor/hls.5e0c7e1b3bfd'
+            }
+          });
+        }).call(this, require || RequireJS.require);
+    </script>
+  
+
+  
+
+  
+
+    <link href="https://d24jp206mxeyfm.cloudfront.net/static/css/lms-style-course-vendor.a12bf6f18640.css" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+
+    <link href="https://d24jp206mxeyfm.cloudfront.net/static/bragi-ff8f00/css/lms-course.14a02107c24c.css" rel="stylesheet" type="text/css" />
+
+
+
+
+<script type="text/javascript" src="https://d24jp206mxeyfm.cloudfront.net/static/js/jquery.autocomplete.964a0bfb4fd2.js"></script>
+<script type="text/javascript" src="https://d24jp206mxeyfm.cloudfront.net/static/js/src/tooltip_manager.b8fa94d4cefc.js"></script>
+
+<link href="https://d24jp206mxeyfm.cloudfront.net/static/css/vendor/jquery.autocomplete.f67f8b5e1719.css" rel="stylesheet" type="text/css">
+  
+
+  
+
+  
+
+
+  
+
+
+<script type="application/json" id="user-metadata">
+    {"username": "letuankiet2518", "user_id": 877490, "course_id": "course-v1:kademy-software+CX001+T6.2022", "course_display_name": "CX001 - X\u00e2y d\u1ef1ng website \u0111\u1ea7u ti\u00ean c\u1ee7a b\u1ea1n", "enrollment_mode": "audit", "upgrade_link": null, "upgrade_price": "Free", "audit_access_deadline": null, "course_duration": null, "pacing_type": "self_paced", "has_staff_access": false, "forum_roles": [["Student"]], "partition_groups": {"Nh\u00f3m Ch\u01b0\u01a1ng tr\u00ecnh Tuy\u1ec3n sinh": [1, "D\u1ef1 th\u00ednh"]}, "has_non_audit_enrollments": false, "program_key_fields": null, "email": "letuankiet2518@gmail.com", "schedule_start": "2022-04-19T14:13:18.019459+00:00", "enrollment_time": "2022-04-19T14:13:18+00:00", "course_start": "2022-01-01T00:00:00+00:00", "course_end": "2055-06-01T00:00:00+00:00", "dynamic_upgrade_deadline": null, "course_upgrade_deadline": null, "course_key_fields": {"org": "kademy-software", "course": "CX001", "run": "T6.2022"}}
+</script>
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+<!-- dummy Segment -->
+<script type="text/javascript">
+  var analytics = {
+    track: function() { return; },
+    trackLink: function() { return; },
+    pageview: function() { return; },
+    page: function() { return; }
+  };
+</script>
+<!-- end dummy Segment -->
+
+
+  <meta name="path_prefix" content="">
+  
+
+  <meta name="openedx-release-line" content="lilac" />
+
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-42572285-6', 'auto', {'name': 'edunext', 'alwaysSendReferrer': true});
+    ga('edunext.require', 'displayfeatures');
+    ga('edunext.send', 'pageview');
+
+   
+  </script>
+
+  
+
+  
+
+
+
+
+</head>
+
+<body class="ltr view-in-course view-courseware courseware  lang_vi">
+
+
+
+
+
+
+<!--[if lte IE 9]>
+	<div class="ie-banner" aria-hidden="true"><strong>Cảnh báo:</strong> Trình duyệt của bạn không được hỗ trợ đầy đủ. Chúng tôi khuyên bạn nên sử dụng <a href="https://www.google.com/chrome" target="_blank">Chrome</a> hoặc <a href="http://www.mozilla.org/firefox" target="_blank">Firefox</a>.</div>
+<![endif]-->
+
+
+<div id="page-prompt"></div>
+  <div class="window-wrap" dir="ltr">
+    
+    <a class="nav-skip sr-only sr-only-focusable" href="#main">Vào thẳng nội dung chính</a>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+    .home-intro {
+      height: 50vh;
+      background: ;
+      box-shadow: ;
+    }
+    .home-intro::before {
+      background: ;
+    }
+
+    .home-intro h1 {
+      color: #FFF;
+    }
+    .home-intro h3 {
+      color: #FFF;
+    }
+    .home-intro p {
+      color: #FFF;
+    }
+
+    .home-intro button {
+      color: ;
+      background: ;
+      border: ;
+      border-radius: ;
+      box-shadow: ;
+    }
+    .home-intro form button[type=submit]:hover:hover,
+    .home-intro form button[type=submit]:focus:focus {
+      color: ;
+      background: ;
+      border: ;
+      box-shadow: ;
+    }
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+    .courses-intro {
+      height: 50vh;
+      background: ;
+      box-shadow: ;
+    }
+    .courses-intro::before {
+      background: ;
+    }
+
+    .courses-intro h1 {
+      color: #FFF;
+    }
+    .courses-intro h3 {
+      color: #FFF;
+    }
+    .courses-intro p {
+      color: #FFF;
+    }
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+    footer.footer {
+      background: #cccccc;
+    }
+
+    .footer .content-container a {
+      background: #cccccc;
+    }
+
+    .footer-description {
+      color: ;
+    }
+
+    .footer .footer-links .nav-link {
+      color: ;
+    }
+    .footer .footer-links .nav-link:hover,
+    .footer .footer-links .nav-link:focus,
+    .footer .footer-links .nav-link:active {
+      color: ;
+    }
+
+    .footer-extra {
+      background: #dddddd;
+    }
+
+    .footer .footer-extra .content-container a {
+      background: #dddddd;
+    }
+
+    .footer-extra .footer-links .nav-link {
+      color: ;
+      background: #dddddd;
+    }
+    .footer-extra .footer-links .nav-link:hover,
+    .footer-extra .footer-links .nav-link:focus,
+    .footer-extra .nav-link:active {
+      color: ;
+    }
+
+    .footer-extra .footer-copy {
+      color: ;
+    }
+  </style>
+
+
+
+<header class="global-header slim navbar">
+    <div class="main-header content-container">
+        
+
+
+
+
+
+
+
+<h1 class="header-logo">
+    <a href="/" class="navbar-logo">
+      
+      <img src="https://enext-analytics.s3.amazonaws.com/usercontent/Wgjg2AAtm_edit.png" alt="Trang chủ Kademy"/>
+      
+    </a>
+    <div class="course-header">
+      <div class="course-header-provider">
+      <span class="provider">kademy-software:</span>
+      <span class="course-number">CX001</span>
+      </div>
+      
+      <span class="course-name">CX001 - Xây dựng website đầu tiên của bạn</span>
+    </div>
+</h1>
+
+        <div class="hamburger-menu navbar-toggler" role="button" aria-label=Options Menu aria-expanded="false" aria-controls="mobile-menu" tabindex="0">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+
+        <div class="container-navbar-links">
+          <ul class="navbar-links navbar-nav d-none d-lg-flex flex-row align-items-center">
+
+             <li class="mobile-nav-item nav-item ">
+                <a class="nav-link px-2" href="/courses" target="_self">Courses</a>
+             </li>
+             <li class="mobile-nav-item nav-item mx-2">
+             </li>
+        </ul>
+            
+
+
+
+
+
+
+
+
+<div class="nav-links">
+  <div class="secondary nav-account">
+    
+
+
+
+
+
+
+<div class="nav-item hidden-mobile">
+    <a href="/dashboard" class="menu-title">
+        <img data-hj-suppress class="user-image-frame" src="https://d24jp206mxeyfm.cloudfront.net/static/images/profiles/default_50.3455a6581573.png" alt="">
+        <span class="sr-only">Bảng thông tin của:</span>
+        <span data-hj-suppress class="username">letuankiet2518</span>
+    </a>
+</div>
+<div class="nav-item hidden-mobile nav-item-dropdown" tabindex="-1">
+    <div class="toggle-user-dropdown" role="button" aria-label=Options Menu aria-expanded="false" tabindex="0" aria-controls="user-menu">
+        <span class="fa fa-caret-down" aria-hidden="true"></span>
+    </div>
+    <div class="dropdown-user-menu hidden" aria-label=Lựa chọn khác role="menu" id="user-menu" tabindex="-1">
+            <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="https://kademy-software.edunext.io/courses/course-v1:kademy-software+CX001+T6.2022/jump_to/block-v1:kademy-software+CX001+T6.2022+type@html+block@8db6b1853d4048ce9def3c26989d54a4" role="menuitem">Resume your last course</a></div>
+            <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/dashboard" role="menuitem">Bảng thông tin</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/u/letuankiet2518" role="menuitem">Hồ sơ</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/account/settings" role="menuitem">Tài khoản</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/logout" role="menuitem">Đăng xuất</a></div>
+    </div>
+</div>
+
+  </div>
+</div>
+
+        </div>
+
+        
+    </div>
+    <div class="mobile-menu hidden" aria-label=Lựa chọn khác role="menu" id="mobile-menu"></div>
+</header>
+
+<!--[if lte IE 9]>
+<div class="ie-banner" aria-hidden="true"><strong>Cảnh báo:</strong> Trình duyệt của bạn không được hỗ trợ đầy đủ. Chúng tôi khuyên bạn nên sử dụng <a href="https://www.google.com/chrome" target="_blank">Chrome</a> hoặc <a href="http://www.mozilla.org/firefox" target="_blank">Firefox</a>.</div>
+<![endif]-->
+
+
+        
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <div class="marketing-hero"></div>
+
+    <div class="content-wrapper main-container" id="content" dir="ltr">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/template" id="image-modal-tpl">
+    <div class="wrapper-modal wrapper-modal-image">
+  <section class="image-link">
+    <%= smallHTML%> <% // xss-lint: disable=underscore-not-escaped %>
+    <a href="#" class="modal-ui-icon action-fullscreen" role="button">
+      <span class="label">
+        <span class="icon fa fa-arrows-alt fa-large" aria-hidden="true"></span> <%- gettext("Fullscreen") %>
+      </span>
+    </a>
+  </section>
+
+  <section class="image-modal">
+    <section class="image-content">
+      <div class="image-wrapper">
+        <img alt="<%- largeALT %>, <%- gettext('Large') %>" src="<%- largeSRC %>" />
+      </div>
+
+      <a href="#" class="modal-ui-icon action-close" role="button">
+        <span class="label">
+          <span class="icon fa fa-remove fa-large" aria-hidden="true"></span> <%- gettext("Close") %>
+        </span>
+      </a>
+
+      <ul class="image-controls">
+        <li class="image-control">
+          <a href="#" class="modal-ui-icon action-zoom-in" role="button">
+            <span class="label">
+              <span class="icon fa fa fa-search-plus fa-large" aria-hidden="true"></span> <%- gettext("Zoom In") %>
+            </span>
+          </a>
+        </li>
+
+        <li class="image-control">
+          <a href="#" class="modal-ui-icon action-zoom-out is-disabled" aria-disabled="true" role="button">
+            <span class="label">
+              <span class="icon fa fa fa-search-minus fa-large" aria-hidden="true"></span> <%- gettext("Zoom Out") %>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </section>
+</div>
+
+</script>
+
+
+
+
+
+
+
+
+<div class="message-banner" aria-live="polite"></div>
+
+  
+
+
+
+
+
+
+
+    
+    
+<script type="text/javascript" src="https://d24jp206mxeyfm.cloudfront.net/static/js/lms-proctoring.a9a18cdd96d7.js" charset="utf-8"></script>
+
+
+        <script type="text/template" id="proctored-exam-status-tpl">
+            <div class="exam-timer">
+    <%
+        function gtLtEscape(str) {
+            return String(str)
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+        }
+    %>
+    <div id="turn_in_exam_id" class="pull-right turn_in_exam" role="region" aria-label="<%- gettext('Exam timer and end exam button')%>">
+        <span>
+            <% if(attempt_status !== 'ready_to_submit') {%>
+                <button class="exam-button-turn-in-exam btn btn-pl-primary btn-primary">
+                    <%- gettext("End My Exam") %>
+                </button>
+            <% } %>
+        </span>
+        <span class="sr timer-announce" aria-live="assertive"></span>
+        <span class="exam-timer-clock">
+            <h3 id="time_remaining_id">
+                <b>
+                </b>
+            </h3>
+            <button role="button" id="toggle_timer" class="btn btn-primary" aria-label="<%- gettext("Hide Timer") %>" aria-pressed="false">
+                <i class="fa fa-eye-slash" aria-hidden="true"></i>
+            </button>
+        </span>
+    </div>
+    <div class='exam-text js-exam-text' data-show-long="true">
+        <% // xss-lint: disable=underscore-not-escaped %>
+        <%= interpolate_text(gettext('You are taking "{exam_link}" as {exam_type}. '), {exam_link: "<a href='" + exam_url_path + "'>"+gtLtEscape(exam_display_name)+"</a>", exam_type: (!_.isUndefined(arguments[0].exam_type)) ? exam_type : gettext('a timed exam')}) %>
+        <span class="js-exam-additional-text" aria-hidden="false">
+            <%- gettext('The timer on the right shows the time remaining in the exam.') %>
+            <%- gettext('To receive credit for problems, you must select "Submit" for each problem before you select "End My Exam".') %>
+        </span>
+        <button class="js-toggle-show-more btn btn-link" data-show-more-text="<%- gettext('Show More') %>" data-show-less-text="<%- gettext('Show Less') %>">
+            <%- gettext('Show Less') %>
+        </button>
+    </div>
+</div>
+
+        </script>
+    <div class="proctored_exam_status"></div>
+
+    
+        <nav class="courseware wrapper-course-material" aria-label="Tài liệu khóa học">
+            <div class="course-material">
+                
+                <ol class="tabs course-tabs">
+                    
+
+
+
+
+
+  
+  <li class="tab">
+  <a href="/courses/course-v1:kademy-software+CX001+T6.2022/course/" class="active">
+  Khóa học
+      <span class="sr">, current location</span>
+  </a>
+  </li>
+  
+  <li class="tab">
+  <a href="/courses/course-v1:kademy-software+CX001+T6.2022/progress" class="">
+  Tiến trình học
+  </a>
+  </li>
+  
+  <li class="tab">
+  <a href="/courses/course-v1:kademy-software+CX001+T6.2022/dates" class="">
+  Ngày
+  </a>
+  </li>
+  
+  <li class="tab">
+  <a href="/courses/course-v1:kademy-software+CX001+T6.2022/discussion/forum/" class="">
+  Thảo Luận
+  </a>
+  </li>
+  
+  <li class="tab">
+  <a href="/courses/course-v1:kademy-software+CX001+T6.2022/a0bc3078bb6f4ababf87c8395bef15d8/" class="">
+  Đăng kí chấm bài tập lớn
+  </a>
+  </li>
+
+                    
+                </ol>
+            </div>
+        </nav>
+
+
+<div class="container"
+    lang="vi"
+  >
+  <div class="course-wrapper" role="presentation">
+
+    <section class="course-content" id="course-content">
+        <header class="page-header has-secondary">
+            <div class="page-header-main">
+                <nav aria-label="Khóa học" class="sr-is-focusable" tabindex="-1">
+                    <div class="has-breadcrumbs">
+                        <div class="breadcrumbs">
+                                <span class="nav-item nav-item-course">
+                                    <a href="/courses/course-v1:kademy-software+CX001+T6.2022/course/">Khóa học</a>
+                                </span>
+                                <span class="icon fa fa-angle-right" aria-hidden="true"></span>
+                                <span class="nav-item nav-item-chapter" data-course-position="1" data-chapter-position="1">
+                                    <a href="/courses/course-v1:kademy-software+CX001+T6.2022/course/#block-v1:kademy-software+CX001+T6.2022+type@chapter+block@c300f20ffc8c4c8a8740c150a9ea96c9">Học phần 01 : Cơ bản về HTML</a>
+                                </span>
+                                <span class="icon fa fa-angle-right" aria-hidden="true"></span>
+                                <span class="nav-item nav-item-section">
+                                    <a href="/courses/course-v1:kademy-software+CX001+T6.2022/course/#block-v1:kademy-software+CX001+T6.2022+type@sequential+block@f58f0b558712471aafd31ad4e2c12cb4">Bài 01 : Khái niệm cơ bản về HTML</a>
+                                </span>
+                                <span class="icon fa fa-angle-right" aria-hidden="true"></span>
+                            <span class="nav-item nav-item-sequence">Giới thiệu cơ bản về HTML và công cụ xây dựng trang web</span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main id="main" tabindex="-1" aria-label="Content">
+
+              
+<div class="xblock xblock-student_view xblock-student_view-sequential xmodule_display xmodule_SequenceBlock" data-course-id="course-v1:kademy-software+CX001+T6.2022" data-init="XBlockToXModuleShim" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="sequential" data-usage-id="block-v1:kademy-software+CX001+T6.2022+type@sequential+block@f58f0b558712471aafd31ad4e2c12cb4" data-request-token="d1d63f92c2ca11ec85fd0b104bf989fb" data-graded="False" data-has-score="False">
+  <script type="json/xblock-args" class="xblock-json-init-args">
+    {"xmodule-type": "Sequence"}
+  </script>
+  
+
+
+<div id="sequence_f58f0b558712471aafd31ad4e2c12cb4" class="sequence" data-id="block-v1:kademy-software+CX001+T6.2022+type@sequential+block@f58f0b558712471aafd31ad4e2c12cb4"
+     data-position="1" data-ajax-url="/courses/course-v1:kademy-software+CX001+T6.2022/xblock/block-v1:kademy-software+CX001+T6.2022+type@sequential+block@f58f0b558712471aafd31ad4e2c12cb4/handler/xmodule_handler"
+     data-next-url="/courses/course-v1:kademy-software+CX001+T6.2022/courseware/c300f20ffc8c4c8a8740c150a9ea96c9/cbba33bdfb42410bbb7fa26bd6b65200/?child=first" data-prev-url="None"
+     data-save-position="true"
+     data-show-completion="true"
+>
+
+  <div class="sequence-nav">
+    <button class="sequence-nav-button button-previous">
+      <span class="icon fa fa-chevron-prev" aria-hidden="true"></span>
+      <span class="sequence-nav-button-label">Previous</span>
+    </button>
+    <button class="sequence-nav-button button-next">
+      <span class="sequence-nav-button-label">Next</span>
+      <span class="icon fa fa-chevron-next" aria-hidden="true"></span>
+    </button>
+    <nav class="sequence-list-wrapper" aria-label="Trình tự">
+      <ol id="sequence-list" role="tablist">
+        <li role="presentation">
+          <button class="seq_other inactive nav-item tab"
+            role="tab"
+            tabindex="-1"
+            aria-selected="false"
+            aria-expanded="false"
+            aria-controls="seq_content"
+            data-index="0"
+            data-id="block-v1:kademy-software+CX001+T6.2022+type@vertical+block@309d0c4066eb469da4369ce2157c4d6e"
+            data-element="1"
+            data-page-title="Giới thiệu cơ bản về HTML và công cụ xây dựng trang web"
+            data-path="Học phần 01 : Cơ bản về HTML &gt; Bài 01 : Khái niệm cơ bản về HTML &gt; Giới thiệu cơ bản về HTML và công cụ xây dựng trang web"
+            data-graded="False"
+            id="tab_0">
+            <span class="icon fa seq_other" aria-hidden="true"></span>
+              <span class="check-circle ">
+                <span
+                  class="fa fa-check-circle"
+                  style="color:green"
+                  aria-hidden="true"
+                ></span>
+              </span>
+                <span class="sr">Đã hoàn tất</span>
+            <span class="bookmark-icon is-hidden">
+              <span class="fa fa-fw fa-bookmark" aria-hidden="true"></span>
+            </span>
+            <div class="sequence-tooltip sr"><span class="sr">other&nbsp;</span>Giới thiệu cơ bản về HTML và công cụ xây dựng trang web<span class="sr bookmark-icon-sr">&nbsp;</span></div>
+          </button>
+        </li>
+        <li role="presentation">
+          <button class="seq_problem inactive nav-item tab"
+            role="tab"
+            tabindex="-1"
+            aria-selected="false"
+            aria-expanded="false"
+            aria-controls="seq_content"
+            data-index="1"
+            data-id="block-v1:kademy-software+CX001+T6.2022+type@vertical+block@bc63b0ee5d8e427dbe3aeb504b5312be"
+            data-element="2"
+            data-page-title="Quiz 1"
+            data-path="Học phần 01 : Cơ bản về HTML &gt; Bài 01 : Khái niệm cơ bản về HTML &gt; Quiz 1"
+            data-graded="False"
+            id="tab_1">
+            <span class="icon fa seq_problem" aria-hidden="true"></span>
+              <span class="check-circle is-hidden">
+                <span
+                  class="fa fa-check-circle"
+                  style="color:green"
+                  aria-hidden="true"
+                ></span>
+              </span>
+            <span class="bookmark-icon is-hidden">
+              <span class="fa fa-fw fa-bookmark" aria-hidden="true"></span>
+            </span>
+            <div class="sequence-tooltip sr"><span class="sr">problem&nbsp;</span>Quiz 1<span class="sr bookmark-icon-sr">&nbsp;</span></div>
+          </button>
+        </li>
+        <li role="presentation">
+          <button class="seq_other inactive nav-item tab"
+            role="tab"
+            tabindex="-1"
+            aria-selected="false"
+            aria-expanded="false"
+            aria-controls="seq_content"
+            data-index="2"
+            data-id="block-v1:kademy-software+CX001+T6.2022+type@vertical+block@9a014dd1aa744ec394bd1abe54f3883c"
+            data-element="3"
+            data-page-title="Trình duyệt"
+            data-path="Học phần 01 : Cơ bản về HTML &gt; Bài 01 : Khái niệm cơ bản về HTML &gt; Trình duyệt"
+            data-graded="False"
+            id="tab_2">
+            <span class="icon fa seq_other" aria-hidden="true"></span>
+              <span class="check-circle is-hidden">
+                <span
+                  class="fa fa-check-circle"
+                  style="color:green"
+                  aria-hidden="true"
+                ></span>
+              </span>
+            <span class="bookmark-icon is-hidden">
+              <span class="fa fa-fw fa-bookmark" aria-hidden="true"></span>
+            </span>
+            <div class="sequence-tooltip sr"><span class="sr">other&nbsp;</span>Trình duyệt<span class="sr bookmark-icon-sr">&nbsp;</span></div>
+          </button>
+        </li>
+      </ol>
+    </nav>
+  </div>
+  <div class="sr-is-focusable" tabindex="-1"></div>
+
+  <div id="seq_contents_0"
+    aria-labelledby="tab_0"
+    aria-hidden="true"
+    class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    
+&lt;div class=&#34;xblock xblock-student_view xblock-student_view-vertical&#34; data-course-id=&#34;course-v1:kademy-software+CX001+T6.2022&#34; data-init=&#34;VerticalStudentView&#34; data-runtime-class=&#34;LmsRuntime&#34; data-runtime-version=&#34;1&#34; data-block-type=&#34;vertical&#34; data-usage-id=&#34;block-v1:kademy-software+CX001+T6.2022+type@vertical+block@309d0c4066eb469da4369ce2157c4d6e&#34; data-request-token=&#34;d1d63f92c2ca11ec85fd0b104bf989fb&#34; data-graded=&#34;False&#34; data-has-score=&#34;False&#34;&gt;
+  
+
+
+
+
+
+  &lt;h2 class=&#34;hd hd-2 unit-title&#34;&gt;Giới thiệu cơ bản về HTML và công cụ xây dựng trang web&lt;/h2&gt;
+
+
+  
+
+
+
+&lt;div class=&#34;bookmark-button-wrapper&#34;&gt;
+  &lt;button class=&#34;btn btn-link bookmark-button &#34;
+    aria-pressed=&#34;false&#34;
+    data-bookmark-id=&#34;letuankiet2518,block-v1:kademy-software+CX001+T6.2022+type@vertical+block@309d0c4066eb469da4369ce2157c4d6e&#34;
+    data-bookmarks-api-url=&#34;/api/bookmarks/v1/bookmarks/&#34;&gt;
+     &lt;span class=&#34;bookmark-text&#34;&gt;Đánh dấu trang này&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;vert-mod&#34;&gt;
+    &lt;div class=&#34;vert vert-0&#34; data-id=&#34;block-v1:kademy-software+CX001+T6.2022+type@html+block@d7f1479ae1b2485c9724a359a267c5df&#34;&gt;
+        
+&lt;div class=&#34;xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock&#34; data-course-id=&#34;course-v1:kademy-software+CX001+T6.2022&#34; data-init=&#34;XBlockToXModuleShim&#34; data-runtime-class=&#34;LmsRuntime&#34; data-runtime-version=&#34;1&#34; data-block-type=&#34;html&#34; data-usage-id=&#34;block-v1:kademy-software+CX001+T6.2022+type@html+block@d7f1479ae1b2485c9724a359a267c5df&#34; data-request-token=&#34;d1d63f92c2ca11ec85fd0b104bf989fb&#34; data-graded=&#34;False&#34; data-has-score=&#34;False&#34;&gt;
+  &lt;script type=&#34;json/xblock-args&#34; class=&#34;xblock-json-init-args&#34;&gt;
+    {&#34;xmodule-type&#34;: &#34;HTMLModule&#34;}
+  &lt;/script&gt;
+  &lt;p&gt;&lt;/p&gt;
+&lt;p class=&#34;MsoNormal&#34; style=&#34;box-sizing: border-box; color: rgb(49, 49, 49); margin: 15pt 0in 17pt; font-family: &amp;quot;Open Sans&amp;quot;, Verdana, Geneva, sans-serif, sans-serif; text-align: justify; line-height: 25.6px; font-size: 16px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;&#34;&gt;&lt;span style=&#34;box-sizing: border-box; color: rgb(51, 51, 51); font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 21.6px; font-family: &amp;quot;Open Sans&amp;quot;, Verdana, Arial, Helvetica, sans-serif;&#34;&gt;HTML là viết tắt của &lt;strong style=&#34;box-sizing: border-box; line-height: 1.4em; font-family: -apple-system, system-ui, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif !important;&#34;&gt;Hypertext markup language&lt;/strong&gt; (ngôn ngữ đánh dấu siêu văn bản).&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&#34;MsoNormal&#34; style=&#34;box-sizing: border-box; color: rgb(49, 49, 49); margin: 15pt 0in 17pt; font-family: &amp;quot;Open Sans&amp;quot;, Verdana, Geneva, sans-serif, sans-serif; text-align: justify; line-height: 25.6px; font-size: 16px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;&#34;&gt;&lt;span style=&#34;box-sizing: border-box; color: rgb(51, 51, 51); font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 21.6px; font-family: &amp;quot;Open Sans&amp;quot;, Verdana, Arial, Helvetica, sans-serif;&#34;&gt;Lưu ý : &lt;strong style=&#34;box-sizing: border-box; line-height: 1.4em; font-family: -apple-system, system-ui, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif !important;&#34;&gt;HTML không phải là ngôn ngữ lập trình,&lt;/strong&gt; thay vào đó nó sử dụng tag (thẻ) để chú thích hoặc đánh dấu tài liệu. Các phần nội dung được đánh dấu bằng các thẻ khác nhau, sẽ có thể hiện khác nhau khi người dùng nhìn thấy nó hiển thị trên trình duyệt.&lt;o:p style=&#34;box-sizing: border-box; line-height: 1.4em; font-family: -apple-system, system-ui, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif !important;&#34;&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&#34;MsoNormal&#34; style=&#34;box-sizing: border-box; color: rgb(49, 49, 49); margin: 15pt 0in 17pt; font-family: &amp;quot;Open Sans&amp;quot;, Verdana, Geneva, sans-serif, sans-serif; text-align: justify; line-height: 25.6px; font-size: 16px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;&#34;&gt;&lt;span style=&#34;box-sizing: border-box; color: rgb(51, 51, 51); font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 1.4em; font-family: &amp;quot;Open Sans&amp;quot;, Verdana, Arial, Helvetica, sans-serif;&#34;&gt;&lt;span style=&#34;box-sizing: border-box; color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 21.6px; font-family: inherit;&#34;&gt;Ví dụ: khi bạn muốn hiển thị tiêu đề của tài liệu, với kích thước to và in đậm, bạn sẽ dùng tag &amp;lt;h1&amp;gt; để đánh dấu như sau: &lt;/span&gt;&lt;em style=&#34;box-sizing: border-box; line-height: 1.4em; font-family: -apple-system, system-ui, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif !important;&#34;&gt;&amp;lt;h1&amp;gt;Đây là tiêu đề của tài liệu&amp;lt;/h1&amp;gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&#34;MsoNormal&#34; style=&#34;box-sizing: border-box; color: rgb(49, 49, 49); margin: 15pt 0in 17pt; font-family: &amp;quot;Open Sans&amp;quot;, Verdana, Geneva, sans-serif, sans-serif; text-align: justify; line-height: 25.6px; font-size: 16px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;&#34;&gt;&lt;span style=&#34;box-sizing: border-box; color: rgb(51, 51, 51); font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 21.6px; font-family: &amp;quot;Open Sans&amp;quot;, Verdana, Arial, Helvetica, sans-serif;&#34;&gt;Tương tự như vậy, thẻ &amp;lt;h2&amp;gt; thể hiện cho tiêu đề con như là 1 mục trong tài liệu. Thẻ &amp;lt;p&amp;gt; thể hiện cho một đoạn trong tài liệu đó. Các tài liệu cũng có thể liên kết với nhau bằng siêu liên kết (hyperlink). Khi đó, chúng ta dùng thẻ &amp;lt;a&amp;gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;div class=&#34;vert vert-1&#34; data-id=&#34;block-v1:kademy-software+CX001+T6.2022+type@html+block@ee53de0af17242aa8e754f41860a76aa&#34;&gt;
+        
+&lt;div class=&#34;xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock&#34; data-course-id=&#34;course-v1:kademy-software+CX001+T6.2022&#34; data-init=&#34;XBlockToXModuleShim&#34; data-runtime-class=&#34;LmsRuntime&#34; data-runtime-version=&#34;1&#34; data-block-type=&#34;html&#34; data-usage-id=&#34;block-v1:kademy-software+CX001+T6.2022+type@html+block@ee53de0af17242aa8e754f41860a76aa&#34; data-request-token=&#34;d1d63f92c2ca11ec85fd0b104bf989fb&#34; data-graded=&#34;False&#34; data-has-score=&#34;False&#34;&gt;
+  &lt;script type=&#34;json/xblock-args&#34; class=&#34;xblock-json-init-args&#34;&gt;
+    {&#34;xmodule-type&#34;: &#34;HTMLModule&#34;}
+  &lt;/script&gt;
+  &lt;p class=&#34;MsoNormal&#34; style=&#34;box-sizing: border-box; color: #313131; margin: 15pt 0in 17pt; font-family: &#39;Open Sans&#39;, Verdana, Geneva, sans-serif, sans-serif; text-align: justify; line-height: 25.6px; font-size: 16px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;&#34;&gt;&lt;span style=&#34;box-sizing: border-box; color: #333333; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 21.6px; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;&#34;&gt;Để lưu file html, chúng ta lưu chúng ở loại file có đuôi là .html. Ví dụ: index.html, about.html…. Khi máy tính nhìn thấy file .html, nó biết rằng nó sẽ mở trong một trình duyệt internet như Chrome, Firefox hoặc Safari.&lt;o:p style=&#34;box-sizing: border-box; line-height: 1.4em; font-family: -apple-system, system-ui, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, &#39;Helvetica Neue&#39;, Arial, sans-serif !important;&#34;&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&#34;MsoNormal&#34; style=&#34;box-sizing: border-box; color: #313131; margin: 15pt 0in 17pt; font-family: &#39;Open Sans&#39;, Verdana, Geneva, sans-serif, sans-serif; text-align: justify; line-height: 25.6px; font-size: 16px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;&#34;&gt;&lt;span style=&#34;box-sizing: border-box; color: #333333; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 21.6px; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;&#34;&gt;Trình duyệt của bạn có thể đọc file *.html và nó biết cách hiển thị trên màn hình. Hơn thế nữa, các tag của file HTML cũng cho phép bộ đọc màn hình và các thiết bị hỗ trợ khác sử dụng các tag để trình bày thông tin theo những cách mới và đặc biệt.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;div class=&#34;vert vert-2&#34; data-id=&#34;block-v1:kademy-software+CX001+T6.2022+type@html+block@16141d60324c41a2a47aa77675d05061&#34;&gt;
+        
+&lt;div class=&#34;xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock&#34; data-course-id=&#34;course-v1:kademy-software+CX001+T6.2022&#34; data-init=&#34;XBlockToXModuleShim&#34; data-runtime-class=&#34;LmsRuntime&#34; data-runtime-version=&#34;1&#34; data-block-type=&#34;html&#34; data-usage-id=&#34;block-v1:kademy-software+CX001+T6.2022+type@html+block@16141d60324c41a2a47aa77675d05061&#34; data-request-token=&#34;d1d63f92c2ca11ec85fd0b104bf989fb&#34; data-graded=&#34;False&#34; data-has-score=&#34;False&#34;&gt;
+  &lt;script type=&#34;json/xblock-args&#34; class=&#34;xblock-json-init-args&#34;&gt;
+    {&#34;xmodule-type&#34;: &#34;HTMLModule&#34;}
+  &lt;/script&gt;
+  &lt;p style=&#34;box-sizing: border-box; color: #313131; margin: 20px 0px 1.41575em; font-family: &#39;Open Sans&#39;, Verdana, Geneva, sans-serif, sans-serif; font-size: 16px;&#34;&gt;HTML được tạo ra từ năm 1990 và có quá trình phát triển liên tục. Cùng với sự phát triển bùng nổ của internet, HTML cũng phát triển và hiện nay trở thành một phần không thể thiếu.&lt;/p&gt;
+&lt;p class=&#34;MsoNormal&#34; style=&#34;box-sizing: border-box; color: #313131; margin: 15pt 0in 17pt; font-family: &#39;Open Sans&#39;, Verdana, Geneva, sans-serif, sans-serif; text-align: justify; line-height: 25.6px; font-size: 16px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; vertical-align: baseline;&#34;&gt;&lt;span style=&#34;box-sizing: border-box; color: #333333; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 21.6px; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;&#34;&gt;Phiên bản hiện tại của HTML là HTML5 và được xuất bản bởi W3C.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;div class=&#34;vert vert-3&#34; data-id=&#34;block-v1:kademy-software+CX001+T6.2022+type@html+block@fe06fd2e023f44ee9205e0446cbbdd0c&#34;&gt;
+        
+&lt;div class=&#34;xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock&#34; data-course-id=&#34;course-v1:kademy-software+CX001+T6.2022&#34; data-init=&#34;XBlockToXModuleShim&#34; data-runtime-class=&#34;LmsRuntime&#34; data-runtime-version=&#34;1&#34; data-block-type=&#34;html&#34; data-usage-id=&#34;block-v1:kademy-software+CX001+T6.2022+type@html+block@fe06fd2e023f44ee9205e0446cbbdd0c&#34; data-request-token=&#34;d1d63f92c2ca11ec85fd0b104bf989fb&#34; data-graded=&#34;False&#34; data-has-score=&#34;False&#34;&gt;
+  &lt;script type=&#34;json/xblock-args&#34; class=&#34;xblock-json-init-args&#34;&gt;
+    {&#34;xmodule-type&#34;: &#34;HTMLModule&#34;}
+  &lt;/script&gt;
+  &lt;p&gt; &lt;a href=&#34;https://www.coursera.org/learn/html/lecture/Lhlau/01-02-the-evolution-of-html&#34; target=&#34;[object Object]&#34;&gt;Video bài giảng&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color: rgb(49, 49, 49); font-family: -apple-system, system-ui, &amp;quot;system-ui&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif;&#34;&gt;Source : Coursera&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+  
+  &lt;script type=&#34;text/javascript&#34;&gt;
+    (function (require) {
+        require([&#39;https://d24jp206mxeyfm.cloudfront.net/static/js/dateutil_factory.be68acdff619.js?raw&#39;], function () {
+          require([&#39;js/dateutil_factory&#39;], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform(&#39;.localized-datetime&#39;);
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  &lt;/script&gt;
+
+
+&lt;script&gt;
+    function emit_event(message) {
+        parent.postMessage(message, &#39;*&#39;);
+    }
+&lt;/script&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div id="seq_contents_1"
+    aria-labelledby="tab_1"
+    aria-hidden="true"
+    class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    
+&lt;div class=&#34;xblock xblock-student_view xblock-student_view-vertical&#34; data-course-id=&#34;course-v1:kademy-software+CX001+T6.2022&#34; data-init=&#34;VerticalStudentView&#34; data-runtime-class=&#34;LmsRuntime&#34; data-runtime-version=&#34;1&#34; data-block-type=&#34;vertical&#34; data-usage-id=&#34;block-v1:kademy-software+CX001+T6.2022+type@vertical+block@bc63b0ee5d8e427dbe3aeb504b5312be&#34; data-request-token=&#34;d1d63f92c2ca11ec85fd0b104bf989fb&#34; data-graded=&#34;False&#34; data-has-score=&#34;False&#34;&gt;
+  
+
+
+
+
+
+  &lt;h2 class=&#34;hd hd-2 unit-title&#34;&gt;Quiz 1&lt;/h2&gt;
+
+
+  
+
+
+
+&lt;div class=&#34;bookmark-button-wrapper&#34;&gt;
+  &lt;button class=&#34;btn btn-link bookmark-button &#34;
+    aria-pressed=&#34;false&#34;
+    data-bookmark-id=&#34;letuankiet2518,block-v1:kademy-software+CX001+T6.2022+type@vertical+block@bc63b0ee5d8e427dbe3aeb504b5312be&#34;
+    data-bookmarks-api-url=&#34;/api/bookmarks/v1/bookmarks/&#34;&gt;
+     &lt;span class=&#34;bookmark-text&#34;&gt;Đánh dấu trang này&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;vert-mod&#34;&gt;
+    &lt;div class=&#34;vert vert-0&#34; data-id=&#34;block-v1:kademy-software+CX001+T6.2022+type@problem+block@833ab34c3ed043fe8a09a249f18a2928&#34;&gt;
+        
+&lt;div class=&#34;xblock xblock-student_view xblock-student_view-problem xmodule_display xmodule_ProblemBlock&#34; data-course-id=&#34;course-v1:kademy-software+CX001+T6.2022&#34; data-init=&#34;XBlockToXModuleShim&#34; data-runtime-class=&#34;LmsRuntime&#34; data-runtime-version=&#34;1&#34; data-block-type=&#34;problem&#34; data-usage-id=&#34;block-v1:kademy-software+CX001+T6.2022+type@problem+block@833ab34c3ed043fe8a09a249f18a2928&#34; data-request-token=&#34;d1d63f92c2ca11ec85fd0b104bf989fb&#34; data-graded=&#34;False&#34; data-has-score=&#34;True&#34;&gt;
+  &lt;script type=&#34;json/xblock-args&#34; class=&#34;xblock-json-init-args&#34;&gt;
+    {&#34;xmodule-type&#34;: &#34;Problem&#34;}
+  &lt;/script&gt;
+  &lt;div id=&#34;problem_833ab34c3ed043fe8a09a249f18a2928&#34; class=&#34;problems-wrapper&#34; role=&#34;group&#34;
+     aria-labelledby=&#34;833ab34c3ed043fe8a09a249f18a2928-problem-title&#34;
+     data-problem-id=&#34;block-v1:kademy-software+CX001+T6.2022+type@problem+block@833ab34c3ed043fe8a09a249f18a2928&#34; data-url=&#34;/courses/course-v1:kademy-software+CX001+T6.2022/xblock/block-v1:kademy-software+CX001+T6.2022+type@problem+block@833ab34c3ed043fe8a09a249f18a2928/handler/xmodule_handler&#34;
+     data-problem-score=&#34;0.0&#34;
+     data-problem-total-possible=&#34;1.0&#34;
+     data-attempts-used=&#34;0&#34;
+     data-content=&#34;
+
+
+
+&amp;lt;h3 class=&amp;#34;hd hd-3 problem-header&amp;#34; id=&amp;#34;833ab34c3ed043fe8a09a249f18a2928-problem-title&amp;#34; aria-describedby=&amp;#34;block-v1:kademy-software+CX001+T6.2022+type@problem+block@833ab34c3ed043fe8a09a249f18a2928-problem-progress&amp;#34; tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+  A01
+&amp;lt;/h3&amp;gt;
+
+&amp;lt;div class=&amp;#34;problem-progress&amp;#34; id=&amp;#34;block-v1:kademy-software+CX001+T6.2022+type@problem+block@833ab34c3ed043fe8a09a249f18a2928-problem-progress&amp;#34;&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&amp;#34;problem&amp;#34;&amp;gt;
+  &amp;lt;div&amp;gt;
+&amp;lt;div class=&amp;#34;wrapper-problem-response&amp;#34; tabindex=&amp;#34;-1&amp;#34; aria-label=&amp;#34;Question 1&amp;#34; role=&amp;#34;group&amp;#34;&amp;gt;&amp;lt;p&amp;gt;HTML c&amp;amp;#243; ph&amp;amp;#7843;i l&amp;amp;#224;m ng&amp;amp;#244;n ng&amp;amp;#7919; l&amp;amp;#7853;p tr&amp;amp;#236;nh kh&amp;amp;#244;ng ?&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;#34;choicegroup capa_inputtype&amp;#34; id=&amp;#34;inputtype_833ab34c3ed043fe8a09a249f18a2928_2_1&amp;#34;&amp;gt;
+    &amp;lt;fieldset aria-describedby=&amp;#34;status_833ab34c3ed043fe8a09a249f18a2928_2_1&amp;#34;&amp;gt;
+          
+          &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt;
+            &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;input_833ab34c3ed043fe8a09a249f18a2928_2_1&amp;#34; id=&amp;#34;input_833ab34c3ed043fe8a09a249f18a2928_2_1_choice_0&amp;#34; class=&amp;#34;field-input input-radio&amp;#34; value=&amp;#34;choice_0&amp;#34;/&amp;gt;&amp;lt;label id=&amp;#34;833ab34c3ed043fe8a09a249f18a2928_2_1-choice_0-label&amp;#34; for=&amp;#34;input_833ab34c3ed043fe8a09a249f18a2928_2_1_choice_0&amp;#34; class=&amp;#34;response-label field-label label-inline&amp;#34; aria-describedby=&amp;#34;status_833ab34c3ed043fe8a09a249f18a2928_2_1&amp;#34;&amp;gt; c&amp;amp;#243;
+            &amp;lt;/label&amp;gt;
+          &amp;lt;/div&amp;gt;
+          
+          &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt;
+            &amp;lt;input type=&amp;#34;radio&amp;#34; name=&amp;#34;input_833ab34c3ed043fe8a09a249f18a2928_2_1&amp;#34; id=&amp;#34;input_833ab34c3ed043fe8a09a249f18a2928_2_1_choice_1&amp;#34; class=&amp;#34;field-input input-radio&amp;#34; value=&amp;#34;choice_1&amp;#34;/&amp;gt;&amp;lt;label id=&amp;#34;833ab34c3ed043fe8a09a249f18a2928_2_1-choice_1-label&amp;#34; for=&amp;#34;input_833ab34c3ed043fe8a09a249f18a2928_2_1_choice_1&amp;#34; class=&amp;#34;response-label field-label label-inline&amp;#34; aria-describedby=&amp;#34;status_833ab34c3ed043fe8a09a249f18a2928_2_1&amp;#34;&amp;gt; kh&amp;amp;#244;ng
+            &amp;lt;/label&amp;gt;
+          &amp;lt;/div&amp;gt;
+        &amp;lt;span id=&amp;#34;answer_833ab34c3ed043fe8a09a249f18a2928_2_1&amp;#34;/&amp;gt;
+    &amp;lt;/fieldset&amp;gt;
+    &amp;lt;div class=&amp;#34;indicator-container&amp;#34;&amp;gt;
+          
+
+&amp;lt;span class=&amp;#34;status unanswered&amp;#34; id=&amp;#34;status_833ab34c3ed043fe8a09a249f18a2928_2_1&amp;#34; data-tooltip=&amp;#34;Not yet answered.&amp;#34;&amp;gt;
+  &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;unanswered&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;#34;status-icon&amp;#34; aria-hidden=&amp;#34;true&amp;#34;/&amp;gt;
+&amp;lt;/span&amp;gt;
+
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;#34;action&amp;#34;&amp;gt;
+    &amp;lt;input type=&amp;#34;hidden&amp;#34; name=&amp;#34;problem_id&amp;#34; value=&amp;#34;A01&amp;#34; /&amp;gt;
+
+    &amp;lt;div class=&amp;#34;problem-action-buttons-wrapper&amp;#34;&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class=&amp;#34;submit-attempt-container&amp;#34;&amp;gt;
+      &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;submit btn-brand&amp;#34; data-submitting=&amp;#34;Submitting&amp;#34; data-value=&amp;#34;Gửi&amp;#34; data-should-enable-submit-button=&amp;#34;True&amp;#34; aria-describedby=&amp;#34;submission_feedback_833ab34c3ed043fe8a09a249f18a2928&amp;#34; &amp;gt;
+          &amp;lt;span class=&amp;#34;submit-label&amp;#34;&amp;gt;Gửi&amp;lt;/span&amp;gt;
+      &amp;lt;/button&amp;gt;
+
+      &amp;lt;div class=&amp;#34;submission-feedback &amp;#34; id=&amp;#34;submission_feedback_833ab34c3ed043fe8a09a249f18a2928&amp;#34;&amp;gt;
+        &amp;lt;span class=&amp;#34;sr&amp;#34;&amp;gt;Một số câu hỏi có các tùy chọn như lưu, đặt lại, gợi ý hoặc hiển thị câu trả lời. Các tùy chọn này nằm sau nút Gửi.&amp;lt;/span&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+    
+
+
+&amp;lt;div class=&amp;#34;notification warning notification-gentle-alert
+      is-hidden&amp;#34;
+     tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+    &amp;lt;span class=&amp;#34;icon fa fa-exclamation-circle&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;#34;notification-message&amp;#34; aria-describedby=&amp;#34;833ab34c3ed043fe8a09a249f18a2928-problem-title&amp;#34;&amp;gt;
+    &amp;lt;/span&amp;gt;
+    &amp;lt;div class=&amp;#34;notification-btn-wrapper&amp;#34;&amp;gt;
+        &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;btn btn-default btn-small notification-btn review-btn sr&amp;#34;&amp;gt;Xem lại&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+    
+
+
+&amp;lt;div class=&amp;#34;notification warning notification-save
+      is-hidden&amp;#34;
+     tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+    &amp;lt;span class=&amp;#34;icon fa fa-save&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;#34;notification-message&amp;#34; aria-describedby=&amp;#34;833ab34c3ed043fe8a09a249f18a2928-problem-title&amp;#34;&amp;gt;None
+    &amp;lt;/span&amp;gt;
+    &amp;lt;div class=&amp;#34;notification-btn-wrapper&amp;#34;&amp;gt;
+        &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;btn btn-default btn-small notification-btn review-btn sr&amp;#34;&amp;gt;Xem lại&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+    
+    
+
+
+&amp;lt;div class=&amp;#34;notification general notification-show-answer
+      is-hidden&amp;#34;
+     tabindex=&amp;#34;-1&amp;#34;&amp;gt;
+    &amp;lt;span class=&amp;#34;icon fa fa-info-circle&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;#34;notification-message&amp;#34; aria-describedby=&amp;#34;833ab34c3ed043fe8a09a249f18a2928-problem-title&amp;#34;&amp;gt;Answers are displayed within the problem
+    &amp;lt;/span&amp;gt;
+    &amp;lt;div class=&amp;#34;notification-btn-wrapper&amp;#34;&amp;gt;
+        &amp;lt;button type=&amp;#34;button&amp;#34; class=&amp;#34;btn btn-default btn-small notification-btn review-btn sr&amp;#34;&amp;gt;Xem lại&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;/div&amp;gt;
+
+&amp;lt;script&amp;gt;
+    function emit_event(message) {
+        parent.postMessage(message, &amp;#39;*&amp;#39;);
+    }
+&amp;lt;/script&amp;gt;
+&#34;
+     data-graded=&#34;False&#34;&gt;
+    &lt;p class=&#34;loading-spinner&#34;&gt;
+        &lt;i class=&#34;fa fa-spinner fa-pulse fa-2x fa-fw&#34;&gt;&lt;/i&gt;
+        &lt;span class=&#34;sr&#34;&gt;Loading&amp;hellip;&lt;/span&gt;
+    &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+  
+  &lt;script type=&#34;text/javascript&#34;&gt;
+    (function (require) {
+        require([&#39;https://d24jp206mxeyfm.cloudfront.net/static/js/dateutil_factory.be68acdff619.js?raw&#39;], function () {
+          require([&#39;js/dateutil_factory&#39;], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform(&#39;.localized-datetime&#39;);
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  &lt;/script&gt;
+
+
+&lt;script&gt;
+    function emit_event(message) {
+        parent.postMessage(message, &#39;*&#39;);
+    }
+&lt;/script&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div id="seq_contents_2"
+    aria-labelledby="tab_2"
+    aria-hidden="true"
+    class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    
+&lt;div class=&#34;xblock xblock-student_view xblock-student_view-vertical&#34; data-course-id=&#34;course-v1:kademy-software+CX001+T6.2022&#34; data-init=&#34;VerticalStudentView&#34; data-runtime-class=&#34;LmsRuntime&#34; data-runtime-version=&#34;1&#34; data-block-type=&#34;vertical&#34; data-usage-id=&#34;block-v1:kademy-software+CX001+T6.2022+type@vertical+block@9a014dd1aa744ec394bd1abe54f3883c&#34; data-request-token=&#34;d1d63f92c2ca11ec85fd0b104bf989fb&#34; data-graded=&#34;False&#34; data-has-score=&#34;False&#34;&gt;
+  
+
+
+
+
+
+  &lt;h2 class=&#34;hd hd-2 unit-title&#34;&gt;Trình duyệt&lt;/h2&gt;
+
+
+  
+
+
+
+&lt;div class=&#34;bookmark-button-wrapper&#34;&gt;
+  &lt;button class=&#34;btn btn-link bookmark-button &#34;
+    aria-pressed=&#34;false&#34;
+    data-bookmark-id=&#34;letuankiet2518,block-v1:kademy-software+CX001+T6.2022+type@vertical+block@9a014dd1aa744ec394bd1abe54f3883c&#34;
+    data-bookmarks-api-url=&#34;/api/bookmarks/v1/bookmarks/&#34;&gt;
+     &lt;span class=&#34;bookmark-text&#34;&gt;Đánh dấu trang này&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;vert-mod&#34;&gt;
+    &lt;div class=&#34;vert vert-0&#34; data-id=&#34;block-v1:kademy-software+CX001+T6.2022+type@html+block@8db6b1853d4048ce9def3c26989d54a4&#34;&gt;
+        
+&lt;div class=&#34;xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock&#34; data-course-id=&#34;course-v1:kademy-software+CX001+T6.2022&#34; data-init=&#34;XBlockToXModuleShim&#34; data-runtime-class=&#34;LmsRuntime&#34; data-runtime-version=&#34;1&#34; data-block-type=&#34;html&#34; data-usage-id=&#34;block-v1:kademy-software+CX001+T6.2022+type@html+block@8db6b1853d4048ce9def3c26989d54a4&#34; data-request-token=&#34;d1d63f92c2ca11ec85fd0b104bf989fb&#34; data-graded=&#34;False&#34; data-has-score=&#34;False&#34;&gt;
+  &lt;script type=&#34;json/xblock-args&#34; class=&#34;xblock-json-init-args&#34;&gt;
+    {&#34;xmodule-type&#34;: &#34;HTMLModule&#34;}
+  &lt;/script&gt;
+  &lt;p style=&#34;margin: 20px 0px 1.41575em; font-family: &#39;Open Sans&#39;, Verdana, Geneva, sans-serif, sans-serif; font-size: 16px;&#34;&gt;Để hiển thị các tài liệu HTML, chúng ta sử dụng các trình duyệt. Có nhiều loại trình duyệt khác nhau như Google Chrome, Firefox, Safari hay Internet Explorer (hiện nay là Microsoft Edge),… Mỗi loại trình duyệt có một số đặc điểm khác nhau. Cũng tùy từng điều kiện và thói quen mà người dùng có thể lựa chọn trình duyệt phù hợp. Cụ thể:&lt;/p&gt;
+&lt;ul style=&#34;line-height: 1.4em; font-family: &#39;Open Sans&#39;, Verdana, Geneva, sans-serif, sans-serif;&#34;&gt;
+&lt;li style=&#34;line-height: 1.4em; margin-bottom: 0.70788em;&#34;&gt;
+&lt;p style=&#34;margin: 0px 0px 1.41575em;&#34;&gt;&lt;span style=&#34;color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 1.4em; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;&#34;&gt;Internet Explorer là trình duyệt đi kèm với Microsoft Windows. Nó được dùng trong thời gian dài trước đây. Năm 2015, Windows 10 ra mắt và nó không cài Internet Explorer làm mặc định, nó sử dụng Microsoft Edge. &lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li style=&#34;line-height: 1.4em; margin-bottom: 0.70788em;&#34;&gt;
+&lt;p style=&#34;margin: 0px 0px 1.41575em;&#34;&gt;&lt;span style=&#34;color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 1.4em; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;&#34;&gt;Google Chrome được phát triển bởi Google. Đó là một phần mềm miễn phí được sử dụng phổ biến hiện nay. Ưu điểm của Google Chrome là tập trung vào bảo mật. Nó có thể đồng bộ hóa giữa các thiết bị. Google Chrome cũng được dùng rất phổ biến trên các thiết bị di dộng.&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li style=&#34;line-height: 1.4em; margin-bottom: 0.70788em;&#34;&gt;
+&lt;p style=&#34;margin: 0px 0px 1.41575em;&#34;&gt;&lt;span style=&#34;color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 1.4em; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;&#34;&gt;Firefox là trình duyệt open source (mã nguồn mở). Firefox cũng được tích hợp cho các hệ điều hành Windows, macOS, Linux và BSD.&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li style=&#34;line-height: 1.4em; margin-bottom: 0.70788em;&#34;&gt;
+&lt;p style=&#34;margin: 0px 0px 1.41575em;&#34;&gt;&lt;span style=&#34;color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 1.4em; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;&#34;&gt;Safari là trình duyệt web mặc định trên các máy có hệ điều hành iOS bao gồm tất cả các máy Mac, iPhone, iPad, …của Apple. Chính sự phát triển mạnh mẽ của Apple đã đẩy sự phát triển của Safari, khiến nó trở thành trình duyệt web phổ biến thứ 2, vượt lên trên cả Internet Explorer.&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&#34;margin-right: 0px; margin-bottom: 1.41575em; margin-left: 0px; font-family: &#39;Open Sans&#39;, Verdana, Geneva, sans-serif, sans-serif; font-size: 16px;&#34;&gt;&lt;span style=&#34;color: #333333; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 1.4em; font-family: inherit;&#34;&gt;&lt;strong style=&#34;line-height: 1.4em;&#34;&gt;Hỗ trợ của trình duyệt&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&#34;margin-right: 0px; margin-bottom: 1.41575em; margin-left: 0px; font-family: &#39;Open Sans&#39;, Verdana, Geneva, sans-serif, sans-serif; font-size: 16px;&#34;&gt;&lt;span style=&#34;color: #333333; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 1.4em; font-family: inherit;&#34;&gt;Các loại trình duyệt có mức độ hỗ trợ khác nhau. Bạn có thể truy cập trang web&lt;/span&gt; &lt;a href=&#34;https://www.html5accessibility.com/&#34; target=&#34;_blank&#34; style=&#34;color: #0079bc; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: 1.4em; font-family: inherit; text-decoration-line: none; transition: all 0.1s linear 0s;&#34;&gt;Html5 Accessibility&lt;/a&gt; để kiểm tra mức độ hỗ trợ cho từng thẻ.&lt;/p&gt;
+&lt;p style=&#34;margin-right: 0px; margin-bottom: 1.41575em; margin-left: 0px; font-family: &#39;Open Sans&#39;, Verdana, Geneva, sans-serif, sans-serif; font-size: 16px;&#34;&gt;Ngoài ra, với vai trò là lập trình viên bạn sẽ tạo ra các mã HTML. Nhưng với người dùng thì rất đa dạng và họ có thể sử dụng bất kì trình duyệt nào. Do đó, bạn cũng cần nắm được sự khác nhau giữa các loại trình duyệt và mức độ hỗ trợ của nó. Điều đó sẽ giúp bạn tạo ra các trang web không có lỗi khi hiển thị trên các trình duyệt khác nhau.&lt;/p&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;div class=&#34;vert vert-1&#34; data-id=&#34;block-v1:kademy-software+CX001+T6.2022+type@html+block@9768dc47906143109542917d96b299c2&#34;&gt;
+        
+&lt;div class=&#34;xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock&#34; data-course-id=&#34;course-v1:kademy-software+CX001+T6.2022&#34; data-mark-completed-on-view-after-delay=&#34;5000&#34; data-init=&#34;XBlockToXModuleShim&#34; data-runtime-class=&#34;LmsRuntime&#34; data-runtime-version=&#34;1&#34; data-block-type=&#34;html&#34; data-usage-id=&#34;block-v1:kademy-software+CX001+T6.2022+type@html+block@9768dc47906143109542917d96b299c2&#34; data-request-token=&#34;d1d63f92c2ca11ec85fd0b104bf989fb&#34; data-graded=&#34;False&#34; data-has-score=&#34;False&#34;&gt;
+  &lt;script type=&#34;json/xblock-args&#34; class=&#34;xblock-json-init-args&#34;&gt;
+    {&#34;xmodule-type&#34;: &#34;HTMLModule&#34;}
+  &lt;/script&gt;
+  &lt;p&gt;&lt;a href=&#34;https://www.coursera.org/learn/html/supplement/JKADk/browserstml&#34; target=&#34;[object Object]&#34;&gt;Video bài giảng ( Source : Coursera )&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+  
+  &lt;script type=&#34;text/javascript&#34;&gt;
+    (function (require) {
+        require([&#39;https://d24jp206mxeyfm.cloudfront.net/static/js/dateutil_factory.be68acdff619.js?raw&#39;], function () {
+          require([&#39;js/dateutil_factory&#39;], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform(&#39;.localized-datetime&#39;);
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  &lt;/script&gt;
+
+
+&lt;script&gt;
+    function emit_event(message) {
+        parent.postMessage(message, &#39;*&#39;);
+    }
+&lt;/script&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div id="seq_content" role="tabpanel"></div>
+
+  <nav class="sequence-bottom" aria-label="Mục">
+    <button class="sequence-nav-button button-previous">
+      <span class="icon fa fa-chevron-prev" aria-hidden="true"></span>
+      <span>Previous</span>
+    </button>
+    <button class="sequence-nav-button button-next">
+      <span>Next</span>
+      <span class="icon fa fa-chevron-next" aria-hidden="true"></span>
+    </button>
+  </nav>
+</div>
+
+</div>
+
+        </main>
+    </section>
+
+    <section class="courseware-results-wrapper">
+      <div id="loading-message" aria-live="polite" aria-relevant="all"></div>
+      <div id="error-message" aria-live="polite"></div>
+      <div class="courseware-results search-results" data-course-id="course-v1:kademy-software+CX001+T6.2022" data-lang-code="vi"></div>
+    </section>
+
+  </div>
+  
+
+
+
+
+
+
+
+
+
+    
+    
+    <script type="text/javascript" src="https://d24jp206mxeyfm.cloudfront.net/static/bundles/CourseSock.8925de2eadbb7645c3d8.eb86a3ce7c69.js" ></script>
+      <script type="text/javascript">
+        
+    new CourseSock({
+        el:'.verification-sock'
+    });
+
+      </script>
+
+
+</div>
+<div class="container-footer">
+    <div class="course-license">
+      
+
+
+    © <span class="license-text">Bản quyền đã được bảo hộ.</span>
+
+    </div>
+</div>
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['https://d24jp206mxeyfm.cloudfront.net/static/js/commerce/track_ecommerce_events.0a92c313c996.js?raw'], function () {
+          require(['js/commerce/track_ecommerce_events'], function (TrackECommerceEvents) {
+            
+
+  var fbeLink = $("#FBE_banner");
+  var welcomeLink = $("#welcome");
+  var accessDeniedUpsellLink = $("#accessDeniedUpsell");
+  var sockLink = $("#sock");
+
+  TrackECommerceEvents.trackUpsellClick(fbeLink, 'in_course_audit_access_expires', {
+      pageName: "in_course",
+      linkType: "link",
+      linkCategory: "FBE_banner"
+  });
+
+  TrackECommerceEvents.trackUpsellClick(welcomeLink, 'in_course_welcome', {
+      pageName: "in_course",
+      linkType: "link",
+      linkCategory: "welcome"
+  });
+
+  TrackECommerceEvents.trackUpsellClick(accessDeniedUpsellLink, 'in_course_upgrade', {
+    pageName: "in_course",
+    linkType: "link",
+    linkCategory: "(none)"
+  });
+
+  TrackECommerceEvents.trackUpsellClick(sockLink, 'in_course_sock', {
+      pageName: "in_course",
+      linkType: "button",
+      linkCategory: "green_upgrade"
+  });
+
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+      
+    </div>
+
+        
+
+
+
+
+
+  <footer class="footer"
+  >
+    <div class="content-container row no-gutters align-items-center py-2 px-2 px-lg-0">
+      <div class="col-12 no-gutters d-lg-none">
+          <p class="footer-description col-12 mt-2 text-center">
+            Online courses from kademy-software. This Open edX site is provided by eduNEXT
+          </p>
+
+          <nav class="footer-links nav col-12 flex-column flex-md-row justify-content-center">
+              <a class="nav-link" href="https://www.edunext.co/about-edunext?utm_source=LMS&amp;utm_medium=web&amp;utm_campaign=kademy-software" target="_self">About eduNEXT</a>
+              <a class="nav-link" href="https://www.edunext.co/about-edunext?utm_source=LMS&amp;utm_medium=web&amp;utm_campaign=kademy-software" target="_self">Get your own Open edX site</a>
+
+          </nav>
+
+      </div>
+
+        <div class="col-6 col-lg-2">
+          <a class="footer-logo" href="/" target="_self">
+            <img src="https://enext-analytics.s3.amazonaws.com/usercontent/Wgjg2AAtm_edit.png" alt="Kademy"/>
+          </a>
+        </div>
+
+      <div class="col-8 no-gutters px-2 d-none d-lg-block">
+          <p class="footer-description col-12 mt-2 ">
+            Online courses from kademy-software. This Open edX site is provided by eduNEXT
+          </p>
+
+          <nav class="footer-links align-items-center nav col-12">
+              <a class="nav-link" href="https://www.edunext.co/about-edunext?utm_source=LMS&amp;utm_medium=web&amp;utm_campaign=kademy-software" target="_self">About eduNEXT</a>
+              <a class="nav-link" href="https://www.edunext.co/about-edunext?utm_source=LMS&amp;utm_medium=web&amp;utm_campaign=kademy-software" target="_self">Get your own Open edX site</a>
+
+          </nav>
+
+      </div>
+
+        <div class="row col-6 col-lg-2 no-gutters">
+            <a class="footer-logo openedx col-12" href="https://open.edx.org/" target="_self">
+              <img src="https://files.edx.org/openedx-logos/edx-openedx-logo-tag.png" alt="Powered by OPENedX" />
+            </a>
+
+            <a class="footer-logo edunext col-12" href="https://www.edunext.co" target="_self">
+              <img src="https://d1uwn6yupg8lfo.cloudfront.net/edxsites/bragi-images/logo-small21.png" alt="" />
+            </a>
+        </div>
+    </div>
+
+      <div class="footer-extra">
+        <div class="content-container row no-gutters py-2 px-2 px-lg-0">
+            <nav class="footer-links nav col-12 flex-column flex-md-row">
+                <a class="nav-link" href="/tos" target="_self">Terms of Service</a>
+                <a class="nav-link" href="/privacy" target="_self">Privacy Policy</a>
+            </nav>
+
+            <small class="footer-copy">Copyright - 2022</small>
+        </div>
+      </div>
+  </footer>
+
+
+
+<!-- Scripts for bootstrap -->
+<script src="https://d1uwn6yupg8lfo.cloudfront.net/resources/libs/enext/bragi/tether.min.js"></script>
+<script src="https://d1uwn6yupg8lfo.cloudfront.net/resources/libs/enext/bragi/bootstrap.min.js"></script>
+
+
+
+<script type="text/javascript">
+  var setHeight = (function  setHeight(){
+    if ($(window).innerHeight() > $('.window-wrap').innerHeight()) {
+      $('.content-wrapper').css('min-height', $(window).innerHeight() - $('.navbar').innerHeight() - $('.footer').innerHeight());
+    }
+  }());
+</script>
+
+
+
+
+  </div>
+
+  
+  
+  <script type="text/javascript" src="https://d24jp206mxeyfm.cloudfront.net/static/common/js/vendor/jquery.scrollTo.525edcc52fe8.js"></script>
+  <script type="text/javascript" src="https://d24jp206mxeyfm.cloudfront.net/static/js/vendor/flot/jquery.flot.d3d45ff0c6a8.js"></script>
+
+  
+    
+<script type="text/javascript" src="https://d24jp206mxeyfm.cloudfront.net/static/js/lms-courseware.515d666a83a0.js" charset="utf-8"></script>
+
+
+  
+
+
+
+
+<script type="text/javascript">
+    // Fast Preview was introduced in 2.5. However, it
+    // causes undesirable flashing/font size changes when
+    // MathJax is used for interactive preview (equation editor).
+    // Setting processSectionDelay to 0 (see below) fully eliminates
+    // fast preview, but to reduce confusion, we are also setting
+    // the option as displayed in the context menu to false.
+    // When upgrading to 2.6, check if this variable name changed.
+    window.MathJax = {
+      menuSettings: {CHTMLpreview: false}
+    };
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [
+        ["\\(","\\)"],
+        ['[mathjaxinline]','[/mathjaxinline]']
+      ],
+      displayMath: [
+        ["\\[","\\]"],
+        ['[mathjax]','[/mathjax]']
+      ]
+    },
+    "HTML-CSS": {
+      imageFont: null,
+      webFont: "TeX",
+      availableFonts: ["TeX"],
+      preferredFont: "TeX"
+  }
+  });
+</script>
+<script type="text/x-mathjax-config">
+
+  // In order to eliminate all flashing during interactive
+  // preview, it is necessary to set processSectionDelay to 0
+  // (remove delay between input and output phases). This
+  // effectively disables fast preview, regardless of
+  // the fast preview setting as shown in the context menu.
+  MathJax.Hub.processSectionDelay = 0;
+
+  MathJax.Hub.signal.Interest(function(message) {
+    if(message[0] === "End Math") {
+        set_mathjax_display_div_settings();
+    }
+  });
+  function set_mathjax_display_div_settings() {
+    $('.MathJax_Display').each(function( index ) {
+      this.setAttribute('tabindex', '0');
+      this.setAttribute('aria-live', 'off');
+      this.removeAttribute('role');
+      this.removeAttribute('aria-readonly');
+    });
+  }
+</script>
+<script type="text/javascript">
+    // Activating Mathjax accessibility files
+    window.MathJax = {
+        menuSettings: {
+            collapsible: true,
+            autocollapse: false,
+            explorer: true
+        }
+    };
+</script>
+
+<!-- This must appear after all mathjax-config blocks, so it is after the imports from the other templates.
+     It can't be run through static.url because MathJax uses crazy url introspection to do lazy loading of
+     MathJax extension libraries -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+
+
+    
+    
+      <script type="text/javascript" src="https://d24jp206mxeyfm.cloudfront.net/static/course_search/js/course_search_factory.a375768825a4.js?raw"></script>
+    <script type="text/javascript">
+        (function (require) {
+            require(['course_search/js/course_search_factory'], function (CourseSearchFactory) {
+                
+        var courseId = $('.courseware-results').data('courseId');
+        CourseSearchFactory({
+            courseId: courseId,
+            searchHeader: $('.search-bar')
+        });
+    
+            });
+        }).call(this, require || RequireJS.require);
+    </script>
+
+
+  
+    
+      <script type="text/javascript" src="https://d24jp206mxeyfm.cloudfront.net/static/js/courseware/courseware_factory.1504fc10caef.js?raw"></script>
+    <script type="text/javascript">
+        (function (require) {
+            require(['js/courseware/courseware_factory'], function (CoursewareFactory) {
+                
+    CoursewareFactory();
+  
+            });
+        }).call(this, require || RequireJS.require);
+    </script>
+
+
+
+  <script type="text/javascript">
+    var $$course_id = "course\u002Dv1:kademy\u002Dsoftware+CX001+T6.2022";
+  </script>
+
+
+<script src='https://d24jp206mxeyfm.cloudfront.net/static/bundles/HtmlBlockPreview.86819b6cd2de10347d85.2e4c1b2b19b8.js' type='application/javascript'></script>
+<script src='https://d24jp206mxeyfm.cloudfront.net/static/bundles/XModuleShim.ddd5659d3d0703959388.6e21ecb6fe08.js' type='application/javascript'></script>
+<script src='https://d24jp206mxeyfm.cloudfront.net/static/bundles/VerticalStudentView.d5e31fd7f173348296b8.bd81e379770d.js' type='application/javascript'></script>
+<script src='https://d24jp206mxeyfm.cloudfront.net/static/bundles/ProblemBlockPreview.8b97370e9b53adfd513b.e62d80f5b89e.js' type='application/javascript'></script>
+<script src='https://d24jp206mxeyfm.cloudfront.net/static/bundles/SequenceBlockPreview.a3c3c3ddf24b80786e0e.076cb101e136.js' type='application/javascript'></script>
+
+
+
+
+  
+
+
+
+  <script type="text/javascript" src="https://d24jp206mxeyfm.cloudfront.net/static/js/vendor/noreferrer.aa62a3e70ffa.js" charset="utf-8"></script>
+  <script type="text/javascript" src="https://d24jp206mxeyfm.cloudfront.net/static/js/utils/navigation.08930e16ab3d.js" charset="utf-8"></script>
+  <script type="text/javascript" src="https://d24jp206mxeyfm.cloudfront.net/static/js/header/header.309a1243e175.js"></script>
+  
+  <script type="text/javascript" src="https://d24jp206mxeyfm.cloudfront.net/static/js/src/jquery_extend_patch.54dddef28d15.js"></script>
+
+</body>
+</html>
+
+
